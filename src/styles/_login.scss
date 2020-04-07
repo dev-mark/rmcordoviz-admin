@@ -14,11 +14,26 @@
   color: white;
 }
 
-.image {
+.rmc-logo {
+  width: 70%;
+  height: 30vh;
+}
+
+.input-container {
+  padding: 15px 0;
+}
+
+.carousel-image {
+  object-fit: cover;
+  height: 450px;
+  max-width: 100%;
+}
+
+hr {
   width: 80%;
 }
 
-@media #{$medium-device} {
+@media #{$small-device} {
   .form-input {
     width: 70%;
     padding: 4%;
@@ -31,35 +46,45 @@
     color: white;
   }
 
-  .image {
+  .rmc-logo {
     width: 60%;
   }
 
   hr {
     width: 70%;
   }
+
+  .image-holder {
+    display: none;
+  }
+
+  .input-container {
+    padding: 40px 0;
+  }
 }
 
-@media #{$large-device} {
+@media #{$medium-device} {
   .form-input {
-    width: 70%;
+    width: 65%;
     padding: 4%;
-    border-radius: 50%/250%;
   }
 
   .form-buttons {
-    border-radius: 50%/250%;
-    width: 70%;
+    width: 65%;
     padding: 2%;
     border: none;
     color: white;
   }
 
-  .image {
-    width: 50%;
+  .rmc-logo {
+    width: 55%;
   }
 
   hr {
-    width: 70%;
+    width: 65%;
+  }
+
+  .image-holder {
+    display: block;
   }
 }

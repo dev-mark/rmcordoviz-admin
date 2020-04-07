@@ -5,19 +5,42 @@ import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";
 import Container from "react-bootstrap/Container";
 import Form from "react-bootstrap/Form";
+import Carousel from "react-bootstrap/Carousel";
 
 // image
-import RMClogo from "../assets/images/RMC-Logo.png";
+import MelaniePhoto from "../assets/images/Melanie.PNG";
+import RossPhoto from "../assets/images/Ross.PNG";
+import { ReactComponent as RMCLogo } from "../assets/images/RMC-logo.svg";
 
 const Login = () => {
   return (
     <Container fluid className=" flex fullheight ">
       <Row noGutters className=" flex-center form-container">
-        <Col md={6} lg={6} className=" image-holder">
-          asd
+        <Col md={6} lg={6} className=" image-holder black-background">
+          <Carousel controls={false} indicators={false} interval={8000}>
+            <Carousel.Item>
+              <img
+                className="carousel-image"
+                src={RossPhoto}
+                alt="First slide"
+              />
+            </Carousel.Item>
+            <Carousel.Item>
+              <img
+                className="carousel-image"
+                src={MelaniePhoto}
+                alt="Third slide"
+              />
+            </Carousel.Item>
+          </Carousel>
         </Col>
-        <Col xs={12} md={6} lg={6} className=" text-center">
-          <img src={RMClogo} alt="RMC logo" className=" image my-4" />
+        <Col
+          xs={12}
+          md={6}
+          lg={6}
+          className=" text-center black-background input-container"
+        >
+          <RMCLogo className=" rmc-logo" />
           <Form>
             <Form.Group className=" flex">
               {/* <Form.Label>Email address</Form.Label> */}
@@ -39,7 +62,12 @@ const Login = () => {
               Login
             </button>
             <hr className="hr-white" />
-            <a href="www.google.com">Create an Account</a>
+            <li>
+              <a href="www.google.com">Forgot password</a>
+            </li>
+            <li>
+              <a href="www.google.com">Create an Account</a>
+            </li>
           </Form>
         </Col>
       </Row>
