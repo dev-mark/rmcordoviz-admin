@@ -1,0 +1,46 @@
+@import "./variables";
+@import "./login";
+
+.debugger {
+  border: 2px solid red;
+}
+
+// .container-fluid {
+//   padding: 0;
+//   //   overflow: hidden;
+// }
+
+.flex {
+  display: flex;
+}
+
+.flex-center {
+  margin: auto;
+}
+
+.fullheight {
+  height: 100vh;
+}
+
+.form-container {
+  width: 700px;
+}
+
+.hr-white {
+  border-color: white;
+  margin: 10% auto;
+}
+
+.gold-background {
+  background-color: $gold-color;
+}
+
+// Media Queries
+@media #{$extra-small-device} {
+  .form-container {
+    width: 100%;
+  }
+  .image-holder {
+    display: none;
+  }
+}

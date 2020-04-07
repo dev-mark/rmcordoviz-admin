@@ -1,0 +1,65 @@
+// @import "./variables";
+
+.form-input {
+  width: 90%;
+  border-radius: 50%/350%;
+  padding: 6%;
+}
+
+.form-buttons {
+  width: 90%;
+  border-radius: 50%/350%;
+  padding: 3%;
+  border: none;
+  color: white;
+}
+
+.image {
+  width: 80%;
+}
+
+@media #{$medium-device} {
+  .form-input {
+    width: 70%;
+    padding: 4%;
+  }
+
+  .form-buttons {
+    width: 70%;
+    padding: 2%;
+    border: none;
+    color: white;
+  }
+
+  .image {
+    width: 60%;
+  }
+
+  hr {
+    width: 70%;
+  }
+}
+
+@media #{$large-device} {
+  .form-input {
+    width: 70%;
+    padding: 4%;
+    border-radius: 50%/250%;
+  }
+
+  .form-buttons {
+    border-radius: 50%/250%;
+    width: 70%;
+    padding: 2%;
+    border: none;
+    color: white;
+  }
+
+  .image {
+    width: 50%;
+  }
+
+  hr {
+    width: 70%;
+  }
+}
